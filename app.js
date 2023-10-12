@@ -16,4 +16,6 @@ database.sync()
 .then((console.log('Connexion à la bdd')))
 .catch(error => console.log(error)) 
 
+
+
 app.listen(4000, () => console.log('Port 4000')) 
