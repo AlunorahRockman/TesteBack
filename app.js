@@ -3,6 +3,7 @@ import database from "./database/database.js"
 import router from "./root/root.js"
 import cors from "cors"
 
+
 const app = express()
 
 app.use(cors({
