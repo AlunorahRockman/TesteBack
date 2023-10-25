@@ -3,7 +3,6 @@ import database from "./database/database.js"
 import router from "./root/root.js"
 import cors from "cors"
 
-
 const app = express()
 
 app.use(cors({
@@ -16,6 +15,4 @@ database.sync()
 .then((console.log('Connexion à la bdd')))
 .catch(error => console.log(error)) 
 
-
-
-app.listen(4000, () => console.log('Port 4000')) 
+app.listen(5000, () => console.log('Port 5000'))

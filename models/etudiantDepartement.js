@@ -1,12 +1,12 @@
 import sequilize from "sequelize";
 import database from "../database/database.js";
-import Cour from "./cour.js";
 import Etudiant from "./etudiant.js";
+import Departement from "./departement.js";
 
 
 const {DataTypes} = sequilize
 
-const EtudiantCour = database.define('EtudiantCour', {
+const EtudiantDepartement = database.define('etudiantDepartement', {
     id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
@@ -18,7 +18,7 @@ const EtudiantCour = database.define('EtudiantCour', {
     }
 })
 
-EtudiantCour.belongsTo(Cour)
-EtudiantCour.belongsTo(Etudiant)
+EtudiantDepartement.belongsTo(Etudiant)
+EtudiantDepartement.belongsTo(Departement)
 
-export default EtudiantCour
+export default EtudiantDepartement
